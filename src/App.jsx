@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <Headline movie={movies.results[0]} />
+      <Headline movie={movies.results[2]} />
     </div>
   )
 }

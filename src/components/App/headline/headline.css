@@ -1,5 +1,13 @@
 .headline-div {
   width: 100vw;
-  height: 70vh;
-  border: solid 1px red;
+  height: 60vh;
+  position: relative;
+}
+
+.headline-background {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }

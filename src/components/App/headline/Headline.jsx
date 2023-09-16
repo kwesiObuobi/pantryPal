@@ -8,7 +8,7 @@ const Headline = ({ movie }) => {
   return (
     <div className="headline-div">
       {/* eslint-disable-next-line react/prop-types */}
-      <img src={`${IMAGEURL}/${movie.poster_path}`} alt="poster path" className="headline-background" />
+      <img src={`${IMAGEURL}/${movie.backdrop_path}`} alt="poster path" className="headline-background" />
 
       <div className="headline-content">
         <div className="header">
