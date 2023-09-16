@@ -93,4 +93,14 @@
   .headline-movie .title {
     font-size: 1.5rem;
   }
+
+  .brand,
+  .auth-box {
+    display: none;
+  }
+
+  .search-div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }

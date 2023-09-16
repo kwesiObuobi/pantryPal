@@ -6,7 +6,7 @@ const MovieList = ({movies}) => {
 
   return (
     <div className="container list-div">
-      <h2>Featured Movie</h2>
+      <h2>Featured Movies</h2>
 
       <div className="container movies-list">
 

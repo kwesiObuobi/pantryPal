@@ -46,7 +46,7 @@ const Details = () => {
         <span data-testid="movie-release-date">{new Date(movie.release_date).getFullYear()} •</span>
         <span data-testid="movie-runtime">{Math.floor(movie.runtime / 60)}h {movie.runtime % 60}m</span>
       </div>
-      <div className="detail-overview">
+      <div className="detail-overview" data-testid="movie-overview">
         {movie.overview}
       </div>
     </div>
