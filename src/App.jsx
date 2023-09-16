@@ -1,9 +1,10 @@
 import './App.css';
+import Headline from './components/App/headline/Headline';
 
 function App() {
   return (
-    <div>
-      <h2>welcome to movies</h2>
+    <div className="App">
+      <Headline />
     </div>
   )
 }
