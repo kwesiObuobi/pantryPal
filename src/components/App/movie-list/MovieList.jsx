@@ -25,77 +25,7 @@ const MovieList = ({movies}) => {
             </div>
             )})
         }
-
-        {/* <div
-          className="movie-card"
-          data-testid="movie-card"
-        >
-          <div className="card-poster-div" data-testid="movie-poster">
-            <img src={`${IMAGEURL}/${movies.results[0].poster_path}`} alt="" />
-          </div>
-          <p className="title" data-testid="movie-title">Title</p>
-          <p className="release-date" data-testid="movie-release-date">Title</p>
-        </div>
-
-        <div
-          className="movie-card"
-          data-testid="movie-card"
-        >
-          <div className="card-poster-div" data-testid="movie-poster">
-            <img src={`${IMAGEURL}/${movies.results[0].poster_path}`} alt="" />
-          </div>
-          <p className="title" data-testid="movie-title">Title</p>
-          <p className="release-date" data-testid="movie-release-date">Title</p>
-        </div>
-
-        <div
-          className="movie-card"
-          data-testid="movie-card"
-        >
-          <div className="card-poster-div" data-testid="movie-poster">
-            <img src={`${IMAGEURL}/${movies.results[0].poster_path}`} alt="" />
-          </div>
-          <p className="title" data-testid="movie-title">Title</p>
-          <p className="release-date" data-testid="movie-release-date">Title</p>
-        </div>
-
-        <div
-          className="movie-card"
-          data-testid="movie-card"
-        >
-          <div className="card-poster-div" data-testid="movie-poster">
-            <img src={`${IMAGEURL}/${movies.results[0].poster_path}`} alt="" />
-          </div>
-          <p className="title" data-testid="movie-title">Title</p>
-          <p className="release-date" data-testid="movie-release-date">Title</p>
-        </div>
-
-        <div
-          className="movie-card"
-          data-testid="movie-card"
-        >
-          <div className="card-poster-div" data-testid="movie-poster">
-            <img src={`${IMAGEURL}/${movies.results[0].poster_path}`} alt="" />
-          </div>
-          <p className="title" data-testid="movie-title">Title</p>
-          <p className="release-date" data-testid="movie-release-date">Title</p>
-        </div>
-
-        <div
-          className="movie-card"
-          data-testid="movie-card"
-        >
-          <div className="card-poster-div" data-testid="movie-poster">
-            <img src={`${IMAGEURL}/${movies.results[0].poster_path}`} alt="" />
-          </div>
-          <p className="title" data-testid="movie-title">Title</p>
-          <p className="release-date" data-testid="movie-release-date">Title</p>
-        </div> */}
-
-
       </div>
-
-
     </div>
   )
 }
