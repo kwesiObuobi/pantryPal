@@ -11,3 +11,56 @@
   object-fit: cover;
   object-position: top;
 }
+
+.headline-content {
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  top: 0;
+  left: 5vw;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+
+.brand,
+.auth-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-div {
+  width: 20rem;
+}
+
+.search-div input {
+  width: 100%;
+  color: white;
+  background: transparent;
+  border: solid 2px white;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.search-div input::placeholder {
+  color: white;
+}
+
+.headline-movie {
+  color: white;
+  width: 30%;
+  margin-top: 4rem;
+}
+
+.headline-movie .title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
