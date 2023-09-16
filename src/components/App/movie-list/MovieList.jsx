@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './movie-list.css';
 
 const MovieList = ({movies}) => {
@@ -12,7 +13,8 @@ const MovieList = ({movies}) => {
         {
           movies.results.slice(3, 13).map((movie) => {
             return (
-            <div
+            <Link
+              to={`movies/${movie.id}`}
               key={movie.id}
               className="movie-card"
               data-testid="movie-card"
@@ -22,7 +24,7 @@ const MovieList = ({movies}) => {
               </div>
               <p className="title" data-testid="movie-title">{movie.title}</p>
               <p className="release-date" data-testid="movie-release-date">{movie.release_date}</p>
-            </div>
+            </Link>
             )})
         }
       </div>
