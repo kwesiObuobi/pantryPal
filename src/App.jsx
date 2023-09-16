@@ -27,7 +27,7 @@ function App() {
    }
 
    if (!movies || !movies.results || movies.results.length === 0) {
-    return (<h1>Loading...</h1>)
+    return (<div className="spinner"><h1>Loading...</h1></div>)
    }
 
   return (

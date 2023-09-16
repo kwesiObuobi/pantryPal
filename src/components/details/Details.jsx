@@ -29,20 +29,25 @@ const Details = () => {
   }
 
   if (!movie) {
-    return (<h2>Loading...</h2>)
+    return (<div className="spinner"><h1>Loading...</h1></div>)
   }
 
   return (
-    <div>
-      <Link to='/' className="back">Back to movies</Link>
-      <p>{movie.original_title}</p>
+    <div className="details-div">
+      <div className="back-div">
+        <Link to='/' className="back">Back to movies</Link>
+      </div>
+
       <div className="detail-img-box">
         <img src={`${IMAGEURL}/${movie.backdrop_path}`} alt="movie backdrop" />
       </div>
       <div className="detail-head">
-        <span data-testid="movie-release-date">{movie.original_title}</span>
-        <span data-testid="movie-release-date">{movie.original_title}</span>
-        <span data-testid="movie-release-date">{movie.original_title}</span>
+        <span data-testid="movie-movie-title">{movie.title} •</span>
+        <span data-testid="movie-release-date">{new Date(movie.release_date).getFullYear()} •</span>
+        <span data-testid="movie-runtime">{Math.floor(movie.runtime / 60)}h {movie.runtime % 60}m</span>
+      </div>
+      <div className="detail-overview">
+        {movie.overview}
       </div>
     </div>
   )

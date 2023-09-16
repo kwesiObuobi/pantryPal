@@ -1,0 +1,65 @@
+.details-div {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.back-div {
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.back {
+  color: white;
+  background-color: #BE123C;
+  padding: 0.5rem;
+  border-radius: inherit;
+}
+
+.detail-img-box {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.detail-img-box img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 60vh;
+  object-fit: cover;
+  object-position: top;
+  border-radius: inherit;
+}
+
+.detail-head {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.detail-head > * {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.detail-overview {
+  width: 60%;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .detail-head > * {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .detail-overview {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .detail-head > * {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
