@@ -29,7 +29,7 @@ const Headline = ({ movie }) => {
 
         <div className="headline-movie">
           <p className="title">{movie.title}</p>
-          <p>{movie.overview}</p>
+          <p className="overview">{movie.overview}</p>
         </div>
       </div>
     </div>

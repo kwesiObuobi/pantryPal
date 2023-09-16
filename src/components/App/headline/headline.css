@@ -64,3 +64,33 @@
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .headline-movie {
+    margin-top: 2rem;
+  }
+
+  .headline-movie .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headline-movie {
+    width: 40%;
+  }
+
+  .headline-content {
+    left: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headline-movie {
+    width: 70%;
+  }
+
+  .headline-movie .title {
+    font-size: 1.5rem;
+  }
+}
