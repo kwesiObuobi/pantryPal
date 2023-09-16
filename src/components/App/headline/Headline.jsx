@@ -4,6 +4,7 @@ import Menu from '../../../assets/images/Menu.png';
 
 const Headline = ({ movie }) => {
   const IMAGEURL = 'https://image.tmdb.org/t/p/w500';
+
   return (
     <div className="headline-div">
       <img src={`${IMAGEURL}/${movie.backdrop_path}`} alt="poster path" className="headline-background" />

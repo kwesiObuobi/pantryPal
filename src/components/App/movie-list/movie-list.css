@@ -1,0 +1,43 @@
+.movies-list {
+  border: solid 1px red;
+  display: grid;
+  grid-gap: 1rem 4rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.list-div h2 {
+  margin: 2rem 0;
+}
+
+.movie-card  {
+  /* width: 15rem; */
+  /* width: 0%; */
+  margin-bottom: 5rem;
+}
+
+.card-poster-div,
+.card-poster-div img {
+  width: 100%;
+}
+
+.movie-card .title {
+  margin: 0.2rem 0;
+}
+
+@media screen and (max-width: 800px) {
+  .movies-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movies-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .movies-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
