@@ -42,7 +42,7 @@ const Details = () => {
         <img src={`${IMAGEURL}/${movie.backdrop_path}`} alt="movie backdrop" />
       </div>
       <div className="detail-head">
-        <span data-testid="movie-movie-title">{movie.title} •</span>
+        <span data-testid="movie-title">{movie.title} •</span>
         <span data-testid="movie-release-date">{new Date(movie.release_date).getFullYear()} •</span>
         <span data-testid="movie-runtime">{Math.floor(movie.runtime / 60)}h {movie.runtime % 60}m</span>
       </div>
