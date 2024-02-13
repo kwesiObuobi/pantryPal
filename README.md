@@ -1,3 +1,5 @@
+# Clean up this repo. Move project
+
 # MovieBox
 
 A movie  discovery  web  application  that  allows  users  to  search  for  movies,  view details  about  them,  and  save  their  favorite  movies.  This project consumes the TMDB API.
