@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <section id="categories-page">
   <div class="container categories-page">
-    <h3>Seafood</h3>
+    <h3>{{ currentCategory() }}</h3>
     <!-- todo: get description from previous api -->
 
-    <ul>
+    @if (loading()) {
+      <div>Loading...</div>
+    } @else {
+      <ul>
+        @for (meal of mealsForThisCategory(); track meal.idMeal) {
+          <app-category-item [itemName]="meal.strMeal" [itemImg]="meal.strMealThumb" />
+        }
+      </ul>
+    }
+
+    <!-- <ul>
       <app-category-item [itemName]="'Baked salmon with fennel & tomatoes and something else'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
       <app-category-item [itemName]="'Shrimp Chow Fun'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
       <app-category-item [itemName]="'Salmon Avocado Salad'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
@@ -18,6 +28,6 @@
       <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
       <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
       <app-category-item [itemName]="'Sledz w Oleju (Polish Herrings)'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-    </ul>
+    </ul> -->
   </div>
 </section>

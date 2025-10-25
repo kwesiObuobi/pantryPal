@@ -61,3 +61,5 @@ For more information on using the Angular CLI, including detailed command refere
 ## Todo
 - [ ] Build Favorits page and functionality
 - [ ] Add youtube video for meal-item
+- [ ] ngOnInit vs constructor
+- [ ] are variables private or public by default

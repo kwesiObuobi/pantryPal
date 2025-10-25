@@ -9,4 +9,10 @@ export class TheMealDb {
     const data = await res.json();
     return data.categories;
   }
+
+  async getMealsForOneCategory(category: string) {
+    const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
+    const data = await res.json();
+    return data.meals;
+  }
 }
