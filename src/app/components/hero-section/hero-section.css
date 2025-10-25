@@ -1,0 +1,33 @@
+#hero {
+  margin: 3rem 0;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  place-items: center;
+}
+
+small {
+  display: block;
+}
+
+.hero-left-h {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin: 2rem 0;
+}
+
+.hero-left button {
+  margin: 2rem 0;
+}
+
+.hero-right {
+  border-radius: 5rem;
+}
+
+img {
+  border-radius: 1rem;
+}
