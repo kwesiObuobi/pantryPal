@@ -14,6 +14,6 @@ export class CategoryItem {
   private router = inject(Router);
 
   navigateToMealItem() {
-    this.router.navigate(['/category', this.itemName])
+    this.router.navigate(['/category', this.itemName()])
   }
 }
