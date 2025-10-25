@@ -17,17 +17,13 @@ export class CategoriesPage {
   loading = signal<boolean>(true);
   currentCategory = signal('');
 
-  // constructor() {
-  //   this.activedRoute.params.subscribe((params) => {
-  //     this.currentCategory.set(params['category']);
-  //   });
-  // }
-  
-  async ngOnInit() {
+  constructor() {
     this.activedRoute.params.subscribe((params) => {
       this.currentCategory.set(params['category']);
     });
-
+  }
+  
+  async ngOnInit() {
     this.mealsForThisCategory.set(await this.mealDbService.getMealsForOneCategory(this.currentCategory()))
     this.loading.set(false);
   }

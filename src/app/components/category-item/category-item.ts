@@ -1,5 +1,5 @@
 import { Component, inject, input } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-category-item',
@@ -10,10 +10,16 @@ import { Router } from '@angular/router';
 export class CategoryItem {
   itemName = input.required<string>();
   itemImg = input("recipe1.jpg");
+  itemId = input.required<string>();
 
   private router = inject(Router);
 
   navigateToMealItem() {
-    this.router.navigate(['/category', this.itemName()])
+    if (this.router.url === '/') {
+      this.router.navigate(['/category', this.itemName()])
+    } else {
+      this.router.navigate(['/meal', this.itemId()])
+      console.log('nothing to do, ', this.itemName())
+    }
   }
 }

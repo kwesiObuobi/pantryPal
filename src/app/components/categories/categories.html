@@ -7,7 +7,7 @@
     } @else {
       <ul class="category-list">
         @for (category of categories(); track category.idCategory) {
-          <app-category-item [itemName]="category.strCategory" [itemImg]="category.strCategoryThumb" />
+          <app-category-item [itemId]="'idCategory'" [itemName]="category.strCategory" [itemImg]="category.strCategoryThumb" />
         }
       </ul>
     }

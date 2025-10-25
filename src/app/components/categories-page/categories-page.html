@@ -9,25 +9,9 @@
     } @else {
       <ul>
         @for (meal of mealsForThisCategory(); track meal.idMeal) {
-          <app-category-item [itemName]="meal.strMeal" [itemImg]="meal.strMealThumb" />
+          <app-category-item [itemId]="meal.idMeal" [itemName]="meal.strMeal" [itemImg]="meal.strMealThumb" />
         }
       </ul>
     }
-
-    <!-- <ul>
-      <app-category-item [itemName]="'Baked salmon with fennel & tomatoes and something else'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Shrimp Chow Fun'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Salmon Avocado Salad'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Portuguese fish stew (Caldeirada de peixe)'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Nasi lemak'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Mediterranean Pasta Salad'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg'" />
-      <app-category-item [itemName]="'Spring onion and prawn empanadas'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Baked salmon with fennel & tomatoes'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-      <app-category-item [itemName]="'Sledz w Oleju (Polish Herrings)'" [itemImg]="'https://www.themealdb.com/images/media/meals/1548772327.jpg'" />
-    </ul> -->
   </div>
 </section>

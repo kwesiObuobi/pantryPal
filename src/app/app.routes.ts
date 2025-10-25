@@ -15,7 +15,7 @@ export const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'meal/:mealname',
+    path: 'meal/:mealId',
     component: SingleMeal,
     pathMatch: 'full'
   }
