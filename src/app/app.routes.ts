@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 import { Homepage } from './pages/homepage/homepage';
+import { CategoriesPage } from './components/categories-page/categories-page';
+import { SingleMeal } from './components/single-meal/single-meal';
 
 export const routes: Routes = [
   {
@@ -7,4 +9,14 @@ export const routes: Routes = [
     component: Homepage,
     pathMatch: 'full',
   },
+  {
+    path: 'category/:category',
+    component: CategoriesPage,
+    pathMatch: 'full'
+  },
+  {
+    path: 'meal/:mealname',
+    component: SingleMeal,
+    pathMatch: 'full'
+  }
 ];

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<li class="category-item">
+<li class="category-item" (click)="navigateToMealItem()">
   <div>
     <img [src]="itemImg()" alt="Beef">
   </div>
@@ -7,12 +7,3 @@
     <p>{{ itemName() }}</p>
   </div>
 </li>
-
-<!-- <li class="category-item">
-  <div>
-    <img src="recipe1.jpg" alt="Beef">
-  </div>
-  <div>
-    <p>{{ itemName() }}</p>
-  </div>
-</li> -->

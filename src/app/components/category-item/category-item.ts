@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-category-item',
@@ -9,4 +10,10 @@ import { Component, input } from '@angular/core';
 export class CategoryItem {
   itemName = input.required<string>();
   itemImg = input("recipe1.jpg");
+
+  private router = inject(Router);
+
+  navigateToMealItem() {
+    this.router.navigate(['/category', this.itemName])
+  }
 }
