@@ -118,10 +118,6 @@ Right
   border-radius: var(--radius-2);
 }
 
-.meal-directions p {
-  white-space: pre-line;
-}
-
 small {
   font-size: 1.5rem;
   font-weight: bold;

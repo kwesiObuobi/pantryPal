@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './single-meal.css'
 })
 export class SingleMeal {
-
+  formattedText(text: string) {
+    // Replace all newline patterns with <br> for HTML rendering
+    return text.replace(/(?:\r\n|\r|\n)/g, '<br><br>');
+  }
 }
