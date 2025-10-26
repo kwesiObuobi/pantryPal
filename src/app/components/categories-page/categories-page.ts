@@ -1,11 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
 import { CategoryItem } from "../category-item/category-item";
 import { TheMealDb } from '../../services/the-meal-db';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-categories-page',
-  imports: [CategoryItem],
+  imports: [CategoryItem, RouterLink],
   templateUrl: './categories-page.html',
   styleUrl: './categories-page.css'
 })

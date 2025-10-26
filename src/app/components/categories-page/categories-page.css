@@ -2,8 +2,29 @@
   padding-top: 1rem;
 }
 
+.heading-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.heading-div a {
+  border: solid 1px #333;
+  padding: 0.7rem;
+  border-radius: var(--radius-2);
+  display: block;
+}
+
+.heading-div a:hover {
+  color: white;
+  background-color: #555151;
+}
+
 h3 {
   margin: 1rem 0 2rem;
+  display: block;
 }
 
 ul {

@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { TheMealDb } from '../../services/the-meal-db';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-single-meal',
@@ -17,10 +18,14 @@ export class SingleMeal {
   currentMealId = signal('');
   ingredientMeasuresList = signal<any[]>([]);
 
-  constructor() {
+  constructor(private location: Location) {
     this.activedRoute.params.subscribe((params) => {
       this.currentMealId.set(params['mealId']);
     });
+  }
+
+  onBackButton() {
+    this.location.back();
   }
 
   constructIngredientMeasuresList() {

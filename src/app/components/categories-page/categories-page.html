@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <section id="categories-page">
   <div class="container categories-page">
-    <h3>{{ currentCategory() }}</h3>
+    <div class="heading-div">
+      <h3>{{ currentCategory() }}</h3>
+      <a routerLink="/">Back</a>
+    </div>
     <!-- todo: get description from previous api -->
 
     @if (loading()) {
