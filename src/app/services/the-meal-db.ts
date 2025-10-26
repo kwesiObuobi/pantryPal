@@ -15,4 +15,10 @@ export class TheMealDb {
     const data = await res.json();
     return data.meals;
   }
+
+  async getSingleMeal(mealId: string) {
+    const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
+    const data = await res.json();
+    return data.meals;
+  }
 }
