@@ -6,7 +6,14 @@
   gap: 1rem;
   border-radius: var(--radius-2);
   box-shadow: 0 2rem 2rem -1rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   /* Todo: Fix height. Make it consistent */
+}
+
+.category-item:hover {
+  cursor: pointer;
+  box-shadow: 0 -2rem 2rem -1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.4rem);
 }
 
 .category-item p {
