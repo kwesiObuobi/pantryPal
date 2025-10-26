@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,14 @@ import { Router } from '@angular/router';
 })
 export class Header {
   private router = inject(Router)
+
   navigateToHome() {
     this.router.navigate(['/'])
+  }
+
+  constructor() {
+    effect(() => {
+      console.log(this.router.url)
+    });
   }
 }
