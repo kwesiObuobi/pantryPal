@@ -21,4 +21,10 @@ export class TheMealDb {
     const data = await res.json();
     return data.meals[0];
   }
+
+  async getRandomMeal() {
+    const res = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
+    const data = await res.json();
+    return data.meals[0];
+  }
 }
