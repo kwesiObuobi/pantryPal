@@ -1,30 +1,50 @@
 # PantryPal
-
+A web app that communicates with the meadDB API to fetch recipes and show users how to make meals. <br >
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
 
-## Development server
+## Built With <a name="built-with"></a>
+- Angular
+- TMDB API
+- TypeScript
 
-To start a local development server, run:
+## Todo / Enhancements [in progress]
+- [ ] Build Favorites page and functionality
+- [ ] Add YouTube video for each meal
+- [ ] Make site mobile-responsive
+- [ ] Implement 'search' feature
+- [ ] Add component testing
 
-```bash
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+- Nodejs
+
+### Setup
+
+Clone this repository to your desired folder:
+```
+git clone https://github.com/kwesiObuobi/pantryPal.git
+```
+
+### Install
+
+Install this project with `npm`:
+
+```
+cd pantryPal
+npm install
+```
+
+### Development Server
+
+To run the project, execute the following command:
+```
 ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
 
 ## Building
 
@@ -52,14 +72,4 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-## Todo / Enhancements
-- [ ] Build Favorites page and functionality
-- [ ] Add youtube video for eact meal
-- [ ] Make site mobile-responsive
-- [ ] Implement 'search' feature
